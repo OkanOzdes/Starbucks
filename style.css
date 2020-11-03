@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 2rem 8rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 4rem;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.links .active {
+  text-decoration: underline;
+}
+
+.content {
+    display: flex;
+}
+.textBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 8rem;
+}
+
+.textBox h2 { 
+    font-size: 50px;
+}
+
+span {
+    color: #017143;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+p {
+    width: 600px;
+}
+
+button {
+    margin-top: 1rem;
+    width: 120px;
+    background-color: #017143;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 40px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.content .imgBox { 
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    padding-right: 50px;
+    padding-top: 50px;
+    
+}
+
+.content .imgBox img { 
+   max-width: 340px;
+}
+
+.items { 
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.items li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.items li:hover {
+    transform: translateY(-15px);
+}
+
+.items li img {
+    max-width: 60px;
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
